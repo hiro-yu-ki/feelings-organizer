@@ -1,0 +1,27 @@
+{
+  "name": "kimochi-moderator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "二人の対話を公平に支える AI 司会 Web アプリ",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test test/smoke.test.js test/domain.test.js test/integration.test.js test/e2e.test.js test/ollama.test.js test/gemini.test.js",
+    "test:smoke": "node --test test/smoke.test.js",
+    "typecheck": "node scripts/check.js typecheck",
+    "lint": "node scripts/check.js lint",
+    "build": "node scripts/check.js build",
+    "e2e": "node --test test/e2e.test.js",
+    "ai:check": "node scripts/check-gemini.js",
+    "cloudflare:dev": "wrangler dev",
+    "cloudflare:smoke": "node test/cloudflare-smoke.mjs",
+    "cloudflare:deploy": "wrangler deploy"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "wrangler": "^4.135.0"
+  }
+}
