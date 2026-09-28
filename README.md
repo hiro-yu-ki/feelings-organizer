@@ -45,12 +45,12 @@ Ollama を利用すると、会話の分析、話題の導入、司会の発言�
 
 登録・ログイン、セッション一覧/作成/参加、本人だけの事前入力と分析の確認、共有候補承認、開始前の話題整理、二人用ライブ対話、AI介入、終了サマリーがあります。招待は作成者にだけコードと URL を表示します。SSE は切断時にブラウザが自動再接続します。
 
-詳細は [architecture](docs/ARCHITECTURE.md)、[mediation policy](docs/MEDIATION_POLICY.md)、[privacy](docs/PRIVACY.md)、[security](SECURITY.md)、[handover](HANDOVER.md) を参照してください。
+詳細は architecture、mediation policy、privacy、[security](SECURITY.md)、handover を参照してください。
 
 ## Cloudflare 公開版
 
 公開 URL: https://your-worker.example
 
-ブラウザで URL を開いて新規登録すれば利用できます。2人目にはアプリの招待 URL を送ってください。公開構成と保守方法は [Cloudflare 公開版](docs/CLOUDFLARE.md) を参照してください。
+ブラウザで URL を開いて新規登録すれば利用できます。2人目にはアプリの招待 URL を送ってください。公開構成と保守方法は Cloudflare 公開版 を参照してください。
 
 対話を作成すると固有の招待リンクが発行されます。「招待リンクを送る」からLINEやメールなどで相手へ送り、相手は自分の端末とアカウントで参加します。
